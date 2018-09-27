@@ -24,7 +24,7 @@ function title {
 
 # for git bosh on mac
 source ~/.git-prompt.sh
-PS1='[\W$(__git_ps1 " (%s)")]\$ '
+PS1='\W$(__git_ps1 " (%s)")\$ '
 
 #add npm globals to PATH
 export PATH==/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
