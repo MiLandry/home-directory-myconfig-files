@@ -1,4 +1,10 @@
+# This is the gitignore for the 'home directory' repo. 
+
+# black list everything by default 
 *
+
+#whitelist things in here to track them
+# add the ! as its needed to overide the blacklist
 !.gitignore
 !.gitignore_global
 !.gitconfig
@@ -7,3 +13,4 @@
 !colors
 !readme.md
 !colors/*
+!.zshrc
