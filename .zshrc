@@ -36,19 +36,19 @@ if [ -d "$GHC_DOT_APP" ]; then
 fi
 
 #load nvm
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-nvm use 8
+# [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+# nvm use 8
 
 
 #work machine
-workComputer=it-mbp-mlandry
-if [ "$HOST" = $workComputer ]; then
-  if [ "$DEBUG" = true ] ; then
-    echo "loading idg "
-  fi
-  source ~/.idg_profile # idg stuff
-  [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-fi
+# workComputer=it-mbp-mlandry
+# if [ "$HOST" = $workComputer ]; then
+#   if [ "$DEBUG" = true ] ; then
+#     echo "loading idg "
+#   fi
+#   source ~/.idg_profile # idg stuff
+#   [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+# fi
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,6 +104,7 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  wd
   zsh-syntax-highlighting
 )
 
@@ -143,3 +144,6 @@ wd() {
 
 # source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+wd() {
+  . /Users/mlandry/bin/wd/wd.sh
+}
