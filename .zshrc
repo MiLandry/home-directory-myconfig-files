@@ -147,3 +147,6 @@ wd() {
 wd() {
   . /Users/mlandry/bin/wd/wd.sh
 }
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
