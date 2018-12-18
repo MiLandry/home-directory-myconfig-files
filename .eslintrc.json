@@ -1,0 +1,117 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict" : true,
+      "experimentalObjectRestSpread": false,
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "no-unused-expressions" : [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "id-length" : [
+      "warn",
+      {
+        "min" : 3,
+        "properties": "always",
+        "exceptions" : ["x","y","i","_","id"]
+      }
+    ],
+    "global-require" : "warn",
+    "sort-keys" : [
+      "warn",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural" : true
+      }
+    ],
+    "max-depth" : [
+      "warn",
+      {
+        "maximum" : 4
+      }
+    ],
+    "max-len" : [
+      "warn",
+      {
+        "code" : 160,
+        "ignoreComments" : true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "max-lines" : [
+      "warn",
+      {
+        "max" : 300,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "max-nested-callbacks" : [
+      "warn",
+      {
+        "max" : 5
+      }
+    ],
+    "max-params" : [
+      "warn",
+      {
+        "max" : 4
+      }
+    ],
+    "max-statements-per-line" : [
+      "warn",
+      {
+        "max" : 1
+      }
+    ],
+    "max-statements" : [
+      "warn",
+      {
+        "max" : 25
+      }
+    ],
+    "import/no-extraneous-dependencies" : [
+      "error",
+      {"devDependencies": ["**/*.test.js","webpack.**config.js"]}
+    ],
+    "no-undef" : [
+      "error",
+      {
+        "typeof" : false
+      }
+    ],
+    "newline-after-var" : [
+      "warn",
+      "always"
+    ],
+    "prefer-rest-params" : "error",
+    "prefer-spread" : "error",
+    "prefer-template" : "error",
+    "require-yield" : "error",
+    "comma-dangle" : [
+      "error",
+      "never"
+    ],
+    "no-underscore-dangle" : "off",
+    "no-plusplus" : "warn",
+    "class-methods-use-this" : "off"
+  }
+}
