@@ -26,5 +26,12 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "[markdown]": {
+    "editor.quickSuggestions": true
+  },
+  "editor.tabCompletion": "onlySnippets",
+  "breadcrumbs.enabled": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false
 }

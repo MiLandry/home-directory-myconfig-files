@@ -9,3 +9,5 @@ mike*
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+/dist
+/generated

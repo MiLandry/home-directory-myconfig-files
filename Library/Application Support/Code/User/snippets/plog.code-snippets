@@ -16,12 +16,15 @@
   // 	"description": "Log output to console"
   // }
   "Print variable to console": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,babel",
     "prefix": "plog",
-    "body": [
-      "console.log('$1', $1)",
-      "$2"
-    ],
+    "body": ["console.log('$1', $1)", "$2"],
     "description": "Log variable to console"
+  },
+  "destructure this.props": {
+    "scope": "javascript,typescript,babel",
+    "prefix": "destructure",
+    "body": ["const { $1 }= this.props"],
+    "description": "destructure this.props"
   }
 }
