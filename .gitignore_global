@@ -1,13 +1,25 @@
+#node stuff
 /node_modules
+
+#ide stuff 
 .idea
-mike*
 .metadata*
-*.log*
-/bower_components
-/bin
-.tmp
-.DS_Store
 *.sublime-project
 *.sublime-workspace
+
+#OS stuff
+.DS_Store
+
+#build stuff
+/bower_components
+/bin
 /dist
 /generated
+
+#miscellaneous stuff
+*.log*
+.tmp
+
+
+#IDK
+mike*
