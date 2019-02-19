@@ -57,15 +57,10 @@ echo 'mike computer'
 
 fi
 
-#work machine
-workComputer=M-Landrys-MacBook-Pro.local
-if [ "$HOSTNAME" = $workComputer ]; then
-  echo "you are at work"
-
-  [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-fi
-
-
+#personal machine
+personalComputer=TODO
+if [ "$HOSTNAME" = $personalComputer ]; then
+echo "you are at home"
 # added by Anaconda2 5.3.1 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -82,3 +77,32 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+fi
+# end of personal machine
+
+#work machine
+workComputer=M-Landrys-MacBook-Pro.local
+if [ "$HOSTNAME" = $workComputer ]; then
+  echo "you are at work"
+
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
+  export PATH=$JAVA_HOME/bin:$PATH
+
+  export ANT_HOME="/opt/onlinemessenger/apache-ant-1.9.13"
+  export PATH=$ANT_HOME/bin:$PATH
+
+  export GRADLE_HOME="/opt/onlinemessenger/gradle-3.5.1"
+  export PATH=$GRADLE_HOME/bin:$PATH
+
+  export GROOVY_HOME="/opt/onlinemessenger/groovy-1.8.9"
+  export PATH=$GROOVY_HOME/bin:$PATH
+
+  export PATH=${PATH}:/Library/PostgreSQL/9.6/bin
+
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" #  This loads nvm
+fi
+
+
+
