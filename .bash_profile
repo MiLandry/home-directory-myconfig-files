@@ -58,11 +58,14 @@ echo 'mike computer'
 fi
 
 #work machine
-workComputer=it-mbp-mlandry
+workComputer=M-Landrys-MacBook-Pro.local
 if [ "$HOSTNAME" = $workComputer ]; then
-  source ~/.idg_profile # idg stuff
+  echo "you are at work"
+
   [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 fi
+
+
 # added by Anaconda2 5.3.1 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
