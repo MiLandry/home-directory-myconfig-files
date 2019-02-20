@@ -58,32 +58,30 @@ echo 'mike computer'
 fi
 
 #personal machine
-personalComputer=TODO
+personalComputer=M-Landrys-MacBook-Pro.local
 if [ "$HOSTNAME" = $personalComputer ]; then
-echo "you are at home"
-# added by Anaconda2 5.3.1 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda2/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/anaconda2/etc/profile.d/conda.sh" ]; then
-        . "/anaconda2/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/anaconda2/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-fi
+  #begin home stuff
+  echo "you are at home"
+  # added by Anaconda2 5.3.1 installer
+  # >>> conda init >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda2/bin/conda' shell.bash hook 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      \eval "$__conda_setup"
+  else
+      if [ -f "/anaconda2/etc/profile.d/conda.sh" ]; then
+          . "/anaconda2/etc/profile.d/conda.sh"
+          CONDA_CHANGEPS1=false conda activate base
+      else
+          \export PATH="/anaconda2/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
 # end of personal machine
+else
 
-#work machine
-workComputer=M-Landrys-MacBook-Pro.local
-if [ "$HOSTNAME" = $workComputer ]; then
+  #start of work machine
+  # you use if else because host machine names at work can change based off vpn
   echo "you are at work"
 
   export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
@@ -102,7 +100,11 @@ if [ "$HOSTNAME" = $workComputer ]; then
 
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" #  This loads nvm
+
 fi
+# end of machine specific logic
+
+
 
 
 
