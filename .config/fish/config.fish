@@ -9,52 +9,33 @@ if not set -q __fish_prompt_hostname
     set -g __fish_prompt_hostname (hostname|cut -d . -f 1)
 end
 
-
+# Start of machine specific stuff
 #work machine
-set workComputer M-Landrys-MacBook-Pro.local
-echo "$hostname"
-echo "$workComputer"
+set homeComputer TODO
+# set workComputer M-Landrys-MacBook-Pro.local
+# Your work computer hostname may be dynamic, making this unreliable
 
-if test "$hostname" = "$workComputer"
-  echo "you are at work"
+if test "$hostname" = "$homeComputer"
+  echo "you are NOT at work"
+
 	else 
-		echo "not at work"
+		echo "you ARE at work"
 
+    # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+    set -gx PATH $JAVA_HOME $PATH
 
-  # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
-  # export PATH=$JAVA_HOME/bin:$PATH
-  set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-  set -gx PATH /usr/local/go/bin $PATH
+  set --export ANT_HOME /opt/onlinemessenger/apache-ant-1.9.13
+  set -gx PATH $ANT_HOME/bin $PATH
 
-  # export ANT_HOME="/opt/onlinemessenger/apache-ant-1.9.13"
-  # export PATH=$ANT_HOME/bin:$PATH
+  set --export GRADLE_HOME /opt/onlinemessenger/gradle-3.5.1
+  set -gx PATH $GRADLE_HOME/bin $PATH
 
-  # export GRADLE_HOME="/opt/onlinemessenger/gradle-3.5.1"
-  # export PATH=$GRADLE_HOME/bin:$PATH
+  set --export GROOVY_HOME /opt/onlinemessenger/groovy-1.8.9
+  set -gx PATH $GROOVY_HOME/bin $PATH
 
-  # export GROOVY_HOME="/opt/onlinemessenger/groovy-1.8.9"
-  # export PATH=$GROOVY_HOME/bin:$PATH
+  set -gx PATH /Library/PostgreSQL/9.6/bin $PATH
 
-  # export PATH=${PATH}:/Library/PostgreSQL/9.6/bin
-
-  # export NVM_DIR="$HOME/.nvm"
-  # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" #  This loads nvm
+  # nvm works via omf plugin https://github.com/FabioAntunes/fish-nvm
 end
-
-
-## Lenguaje Go
-set --export GOROOT /usr/local/go
-set -gx PATH /usr/local/go/bin $PATH
-#set -gx PATH GOROOT/bin $PATH
-set --export GOPATH $HOME/GoProjects
-set -gx PATH $GOPATH/bin $PATH
-
-# ## AppEngine para GO
-# set -gx PATH $HOME/programs/go_appengine $PATH
-
-# ## Android
-# set --export JAVA_HOME /usr/local/java/jdk1.7.0_67/
-# set --export ANDROID $HOME/programs/android-studio
-# set --export ANDROID_HOME $ANDROID/sdk
-# set -gx PATH $ANDROID/bin $PATH
-# set -gx PATH $ANDROID/sdk/platform-tools $PATH
+# end of work stuff 
