@@ -1,5 +1,5 @@
 #node stuff
-/node_modules
+node_modules/
 
 #ide stuff 
 /.idea
