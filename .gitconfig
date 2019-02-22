@@ -1,6 +1,6 @@
 [core]
 	editor = 'subl' --wait
-	excludesfile = /Users/mlandry/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [push]
 	default = current
@@ -59,4 +59,4 @@
 	required = true
 	clean = git-lfs clean -- %f
 [commit]
-	template = /Users/mlandry/.stCommitMsg
+	template = ~/.stCommitMsg
