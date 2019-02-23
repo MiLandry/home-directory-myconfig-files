@@ -4,18 +4,8 @@ alias cls="clear"
 # clear to cls
 alias gas="git status"
 
-# define hostname if not already defined
-if not set -q __fish_prompt_hostname
-    set -g __fish_prompt_hostname (hostname|cut -d . -f 1)
-end
-
 # Start of machine specific stuff
-#work machine
-set homeComputer TODO
-# set workComputer M-Landrys-MacBook-Pro.local
-# Your work computer hostname may be dynamic, making this unreliable
-
-if test "$hostname" = "$homeComputer"
+if test -f .personal # you decided to just createA .personal file and useThat to check
   echo "you are NOT at work"
 
 	else 
