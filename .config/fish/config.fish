@@ -5,7 +5,7 @@ alias cls="clear"
 alias gas="git status"
 
 # Start of machine specific stuff
-if test -f .personal # you decided to just createA .personal file and useThat to check
+if test -f ~/.personal # you decided to just createA .personal file and useThat to check
   echo "you are NOT at work"
 
 	else 
