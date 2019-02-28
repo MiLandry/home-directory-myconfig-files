@@ -23,3 +23,5 @@ node_modules/
 
 #IDK
 mike*
+.idea/
+testclasses

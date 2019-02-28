@@ -1,6 +1,6 @@
 [core]
 	editor = 'subl' --wait
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/michael.landry/.gitignore_global
 	autocrlf = input
 [push]
 	default = current
@@ -8,8 +8,8 @@
 	conflictstyle = diff3
 	tool = kdiff3
 [user]
-	name = Michael Landry
-	email = mlandryviolin@gmail.com
+	name = michael.landry
+	email = michael.landry@fiserv.com
 [help]
 	autocorrect = 1
 [color]
@@ -45,7 +45,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [http]
 	sslVerify = false
