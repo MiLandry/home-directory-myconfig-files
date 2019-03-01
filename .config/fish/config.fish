@@ -4,6 +4,11 @@ alias cls="clear"
 # clear to cls
 alias gas="git status"
 
+#alias land
+alias st="subl"
+alias rn="mv"
+
+
 # Start of machine specific stuff
 if test -f ~/.personal # you decided to just createA .personal file and useThat to check
   echo "you are NOT at work"

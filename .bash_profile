@@ -11,6 +11,7 @@ alias vim='issw com.apple.keylayout.US; vim'
 alias gas='git status'
 alias gpull='git pull'
 alias paste='pbpaste'
+alias rn='mv'
 #also you should rely on keyboard maestro to blow up typed aliases
 
 ## just put new science experiments below here
