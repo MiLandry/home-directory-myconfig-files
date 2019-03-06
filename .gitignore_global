@@ -25,3 +25,4 @@ node_modules/
 mike*
 .idea/
 testclasses
+.meteor
