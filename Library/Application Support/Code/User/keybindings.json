@@ -131,5 +131,21 @@
   {
     "key": "ctrl+cmd+1",
     "command": "-workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "-workbench.action.previousEditor"
   }
 ]

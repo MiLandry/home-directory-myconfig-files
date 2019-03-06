@@ -33,5 +33,6 @@
   "editor.tabCompletion": "onlySnippets",
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "sync.gist": "c40af63fe8ac9e737d195315fb1c0860"
 }
