@@ -4,6 +4,11 @@ alias cls="clear"
 # clear to cls
 alias gas="git status"
 
+#alias land
+alias st="subl"
+alias rn="mv"
+
+
 # Start of machine specific stuff
 if test -f ~/.personal # you decided to just createA .personal file and useThat to check
   echo "you are NOT at work"
@@ -11,8 +16,8 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
 	else 
 		echo "you ARE at work"
 
-    # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+    # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
     set -gx PATH $JAVA_HOME $PATH
 
   set --export ANT_HOME /opt/onlinemessenger/apache-ant-1.9.13
