@@ -23,11 +23,14 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
   set --export ANT_HOME /opt/onlinemessenger/apache-ant-1.9.13
   set -gx PATH $ANT_HOME/bin $PATH
 
-  set --export GRADLE_HOME /opt/onlinemessenger/gradle-3.5.1
+  set --export GRADLE_HOME /opt/onlinemessenger/gradle-3.5
   set -gx PATH $GRADLE_HOME/bin $PATH
 
   set --export GROOVY_HOME /opt/onlinemessenger/groovy-1.8.9
   set -gx PATH $GROOVY_HOME/bin $PATH
+  
+  #add home directory for chrome drivers
+  set -gx PATH ~ $PATH
 
   set -gx PATH /Library/PostgreSQL/9.6/bin $PATH
 
