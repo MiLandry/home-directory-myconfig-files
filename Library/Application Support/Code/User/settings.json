@@ -30,9 +30,13 @@
   "[markdown]": {
     "editor.quickSuggestions": true
   },
-  "editor.tabCompletion": "onlySnippets",
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
-  "sync.gist": "c40af63fe8ac9e737d195315fb1c0860"
+  "sync.gist": "c40af63fe8ac9e737d195315fb1c0860",
+  "files.associations": {
+    "*.jsx": "javascript"
+  },
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top"
 }

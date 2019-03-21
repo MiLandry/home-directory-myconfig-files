@@ -32,6 +32,7 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
   #add home directory for chrome drivers
   set -gx PATH ~ $PATH
 
+  # add postgres tools to path
   set -gx PATH /Library/PostgreSQL/9.6/bin $PATH
 
   # nvm works via omf plugin https://github.com/FabioAntunes/fish-nvm
