@@ -150,3 +150,7 @@ wd() {
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/michael.landry/.sdkman"
+[[ -s "/Users/michael.landry/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/michael.landry/.sdkman/bin/sdkman-init.sh"

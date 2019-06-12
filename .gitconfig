@@ -60,3 +60,5 @@
 	clean = git-lfs clean -- %f
 [commit]
 	template = ~/.stCommitMsg
+[credential]
+	helper = osxkeychain

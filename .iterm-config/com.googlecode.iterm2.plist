@@ -58,12 +58,14 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>952 321 445 77 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>2410 353 700 622 1920 150 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 291 606 469 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>456 649 796 486 0 0 1920 1177 </string>
+	<string>2279 596 770 429 1920 30 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>1920 150 1680 1027 1920 150 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -678,6 +680,8 @@
 	<real>572205093.27315295</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -724,7 +728,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-11T12:50:47Z</date>
+	<date>2019-04-26T18:13:29Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -732,7 +736,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.7</string>
+	<string>3.2.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

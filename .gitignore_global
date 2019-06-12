@@ -19,10 +19,10 @@ node_modules/
 #miscellaneous stuff
 *.log*
 .tmp
-
+web/webapps/WebModule/WEB-INF/view/sso/navigate.css
 
 #IDK
 mike*
-.idea/*
+**.idea/**
 testclasses
 
