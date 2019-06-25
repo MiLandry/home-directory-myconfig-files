@@ -33,6 +33,7 @@
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
+<<<<<<< Updated upstream
   "sync.gist": "c40af63fe8ac9e737d195315fb1c0860",
   "files.associations": {
     "*.jsx": "javascript"
@@ -40,3 +41,13 @@
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top"
 }
+||||||| merged common ancestors
+  "sync.gist": "c40af63fe8ac9e737d195315fb1c0860"
+}
+=======
+  "sync.gist": "c40af63fe8ac9e737d195315fb1c0860",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false
+}
+>>>>>>> Stashed changes
