@@ -16,8 +16,8 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
 	else 
 		echo "you ARE at work"
 
-    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-    # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+    # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
     set -gx PATH $JAVA_HOME $PATH
 
   set --export ANT_HOME /opt/onlinemessenger/apache-ant-1.9.13
@@ -26,7 +26,8 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
   set --export GRADLE_HOME /opt/onlinemessenger/gradle-3.5
   set -gx PATH $GRADLE_HOME/bin $PATH
 
-  set --export GROOVY_HOME /opt/onlinemessenger/groovy-1.8.9
+  set --export GROOVY_HOME /opt/onlinemessenger/groovy-2.5.6
+  # set --export GROOVY_HOME /opt/onlinemessenger/groovy-1.8.9
   set -gx PATH $GROOVY_HOME/bin $PATH
   
   #add home directory for chrome drivers
