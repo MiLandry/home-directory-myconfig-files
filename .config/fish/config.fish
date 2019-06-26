@@ -39,3 +39,4 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
   # nvm works via omf plugin https://github.com/FabioAntunes/fish-nvm
 end
 # end of work stuff 
+

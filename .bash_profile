@@ -41,7 +41,7 @@ fi
 
 #load nvm
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-nvm use 8
+# nvm use 8
 
 #export rust to path
 #export PATH="~/.cargo/bin:$PATH"
