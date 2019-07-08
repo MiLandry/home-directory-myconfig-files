@@ -86,7 +86,7 @@ else
   echo "you are at work"
 
   # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home"
   export PATH=$JAVA_HOME/bin:$PATH
 
   export ANT_HOME="/opt/onlinemessenger/apache-ant-1.9.13"

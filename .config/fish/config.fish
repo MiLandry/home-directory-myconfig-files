@@ -17,7 +17,7 @@ if test -f ~/.personal # you decided to just createA .personal file and useThat 
 		echo "you ARE at work"
 
     # set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+    set --export JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home
     set -gx PATH $JAVA_HOME $PATH
 
   set --export ANT_HOME /opt/onlinemessenger/apache-ant-1.9.13
