@@ -1,8 +1,10 @@
 #node stuff
 node_modules/
 
+
 #ide stuff 
 /.idea
+.idea/
 .metadata*
 *.sublime-project
 *.sublime-workspace
