@@ -1,6 +1,6 @@
 [core]
-	editor = 'subl' --wait
-	excludesfile = /Users/michael.landry/.gitignore_global
+	editor = 'sublime' --wait
+	excludesfile = /Users/michaellandry/.gitignore_global
 	autocrlf = input
 [push]
 	default = current
