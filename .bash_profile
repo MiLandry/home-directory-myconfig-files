@@ -12,9 +12,18 @@ alias gas='git status'
 alias gpull='git pull'
 alias paste='pbpaste'
 alias rn='mv'
+alias derek='list-all-helpers'
+alias derek-load='source ~/lib/functions/work.bash'
+alias derekgit='list-git-helpers'
+alias dgit='list-git-helpers'
 #also you should rely on keyboard maestro to blow up typed aliases
 
-## just put new science experiments below here
+## just put new science experiments
+## below here (that you will run in both personal and work boxes)
+## new science experiments probably belong to a specific box
+
+# define the wd function
+source ~/.wd
 
 ######################################################################
 
@@ -32,16 +41,6 @@ export PATH==/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
 #make sublime editor
 export EDITOR='subl -w'
-
-# Add Haskell GHC 7.10.3 to the PATH, via https://ghcformacosx.github.io/
-export GHC_DOT_APP="/Applications/ghc-7.10.3.app"
-if [ -d "$GHC_DOT_APP" ]; then
-  export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
-fi
-
-#load nvm
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-# nvm use 8
 
 #export rust to path
 #export PATH="~/.cargo/bin:$PATH"
@@ -61,8 +60,21 @@ fi
 #personal machine
 personalComputer=M-Landrys-MacBook-Pro.local
 if [ "$HOSTNAME" = $personalComputer ]; then
+
+
   #begin home stuff
   echo "you are at home"
+
+  #load nvm
+  [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+  # nvm use 8
+
+  # Add Haskell GHC 7.10.3 to the PATH, via https://ghcformacosx.github.io/
+  export GHC_DOT_APP="/Applications/ghc-7.10.3.app"
+  if [ -d "$GHC_DOT_APP" ]; then
+    export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+  fi
+
   # added by Anaconda2 5.3.1 installer
   # >>> conda init >>>
   # !! Contents within this block are managed by 'conda init' !!
@@ -83,35 +95,32 @@ else
 
   #start of work machine
   # you use if else because host machine names at work can change based off vpn
-  echo "you are at work"
+  echo "you are at work says bash_profile"
 
-  # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home"
-  export PATH=$JAVA_HOME/bin:$PATH
+#fiserv stuff
+  # # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
+  # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home"
+  # export PATH=$JAVA_HOME/bin:$PATH
 
-  export ANT_HOME="/opt/onlinemessenger/apache-ant-1.9.13"
-  export PATH=$ANT_HOME/bin:$PATH
+  # export ANT_HOME="/opt/onlinemessenger/apache-ant-1.9.13"
+  # export PATH=$ANT_HOME/bin:$PATH
 
-  export GRADLE_HOME="/opt/onlinemessenger/gradle-3.5.1"
-  export PATH=$GRADLE_HOME/bin:$PATH
+  # export GRADLE_HOME="/opt/onlinemessenger/gradle-3.5.1"
+  # export PATH=$GRADLE_HOME/bin:$PATH
 
-  export GROOVY_HOME="/opt/onlinemessenger/groovy-1.8.9"
-  export PATH=$GROOVY_HOME/bin:$PATH
+  # export GROOVY_HOME="/opt/onlinemessenger/groovy-1.8.9"
+  # export PATH=$GROOVY_HOME/bin:$PATH
 
-  export PATH=${PATH}:/Library/PostgreSQL/9.6/bin
+  # export PATH=${PATH}:/Library/PostgreSQL/9.6/bin
 
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" #  This loads nvm
 
+  #PPS stuff
+
+  #load derek bash helper
+  source ~/lib/functions/work.bash
+
+# end of work machine
 fi
 # end of machine specific logic
-
-
-
-
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/michael.landry/.sdkman"
-[[ -s "/Users/michael.landry/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/michael.landry/.sdkman/bin/sdkman-init.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
