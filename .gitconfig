@@ -33,10 +33,10 @@
 	dt = difftool
 	lga = log --graph --oneline --all --decorate
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 [http]
 	sslVerify = false
@@ -65,6 +65,7 @@
   cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
 [merge]
   tool = meld
+	tool = kdiff3
 [mergetool]
   prompt = false
 [mergetool "meld"]

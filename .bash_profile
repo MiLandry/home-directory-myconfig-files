@@ -16,6 +16,7 @@ alias derek='list-all-helpers'
 alias derek-load='source ~/lib/functions/work.bash'
 alias derekgit='list-git-helpers'
 alias dgit='list-git-helpers'
+# alias wd = 'title $1 && wd $1'
 #also you should rely on keyboard maestro to blow up typed aliases
 
 ## just put new science experiments
