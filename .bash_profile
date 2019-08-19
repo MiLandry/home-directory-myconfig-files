@@ -2,6 +2,7 @@
 #This script runs at the start of every new terminal shell
 # This is the file you want to use to configure bash, there is also .bashrc but this one is better to use.
 
+
 #alias land
 alias chrome="open -a 'Google Chrome'"
 alias st='subl'

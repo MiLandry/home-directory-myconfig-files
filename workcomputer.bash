@@ -1,7 +1,7 @@
 #start of work machine
 # you use if else because host machine names at work can change based off vpn
 echo "you are at work says bash_profile"
-
+ 
 #fiserv stuff
 # # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home"
