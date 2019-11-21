@@ -1,0 +1,3 @@
+source ~/.wd
+wd $1
+/usr/local/bin/webstorm .
