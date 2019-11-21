@@ -17,6 +17,7 @@ alias derek='list-all-helpers'
 alias derek-load='source ~/lib/functions/work.bash'
 alias derekgit='list-git-helpers'
 alias dgit='list-git-helpers'
+
 # alias wd = 'title $1 && wd $1'
 #also you should rely on keyboard maestro to blow up typed aliases
 
@@ -24,8 +25,6 @@ alias dgit='list-git-helpers'
 ## below here (that you will run in both personal and work boxes)
 ## new science experiments probably belong to a specific box
 
-# define the wd function
-source ~/.wd
 
 ######################################################################
 
@@ -68,3 +67,6 @@ else
   source ~/workcomputer.bash
 fi
 # end of machine specific logic
+
+export NVM_DIR="/Users/michael.landry/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

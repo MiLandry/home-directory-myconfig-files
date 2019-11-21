@@ -1,5 +1,5 @@
 [core]
-	editor = 'sublime' --wait
+	editor = 'code' --wait
 	excludesfile = /Users/michaellandry/.gitignore_global
 	autocrlf = input
 [checkout]
@@ -66,8 +66,12 @@
 [merge]
   tool = meld
 	tool = kdiff3
+	tool = kdiff3
 [mergetool]
   prompt = false
 [mergetool "meld"]
   trustExitCode = true
   cmd = open -W -a Meld --args --auto-merge \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+	trustExitCode = false

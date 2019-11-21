@@ -21,6 +21,7 @@ node_modules/
 #miscellaneous stuff
 *.log*
 .tmp
+.npmrc
 web/webapps/WebModule/WEB-INF/view/sso/navigate.css
 
 #IDK
