@@ -3,11 +3,13 @@
 #work alias
 alias ccl=kubectl
 alias k=kubectl
-alias br=~/workcomputer.bash
+# alias br=echo 'snth'
+alias br=reset
+# alias br=~/workcomputer.bash
 complete -F __start_kubectl ccl
 
 # you use if else because host machine names at work can change based off vpn
-echo "you are at work says bash_profile"
+echo "workcomputer.bash running"
 # source '.wd'
 source ~/.wd
  
@@ -110,6 +112,15 @@ function sad() {
     _echo-item "merge down (ma), maybe its possible to accept a single side if conflicts"
     _echo-item "poosh (pf)"
 
+}
+
+
+function klogs() {
+    k logs $1 | bunyan
+}
+
+function kget() {
+    k get po | grep $1
 }
 
 
