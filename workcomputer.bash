@@ -107,6 +107,7 @@ function sad() {
 
     _echo-item "merge conflicts? this probably happened after a yf"
     _echo-item "resolve using webstorm (show local changes, then merge, then scroll down and click on the arrows)"
+    _echo-item "note that YOUR stuff is in the left window, "
     _echo-item "commit after resolution"
     _echo-item "run unit tests"
     _echo-item "merge down (ma), maybe its possible to accept a single side if conflicts"
@@ -122,6 +123,14 @@ function klogs() {
 function kget() {
     k get po | grep $1
 }
+
+# this seems to break my shell
+# TMPDIR=${TMPDIR:-/tmp}  # default to /tmp if TMPDIR isn't set
+# F=$(mktemp $TMPDIR/tosubl-XXXXXXXX)
+# cat >| $F  # use >| instead of > if you set noclobber in bash
+# subl $F
+# sleep .3  # give subl a little time to open the file
+# rm -f $F  # file will be deleted as soon as subl closes it
 
 
 

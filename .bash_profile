@@ -41,7 +41,10 @@ PS1='\W$(__git_ps1 " (%s)")\$ '
 export PATH==/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
 #make sublime editor
-export EDITOR='subl -w'
+# export EDITOR='subl -w'
+
+#make webstorm editor
+export EDITOR='webstorm'
 
 #export rust to path
 #export PATH="~/.cargo/bin:$PATH"
