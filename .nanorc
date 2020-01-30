@@ -1,0 +1,11 @@
+set nowrap
+unbind M-B all 
+bind M-B prevword main 
+unbind M-F all 
+unbind ^P all
+unbind ^W all
+unbind ^Q all
+bind M-F nextword main
+bind ^S writeout main
+bind ^Q exit main
+bind ^F whereis main
