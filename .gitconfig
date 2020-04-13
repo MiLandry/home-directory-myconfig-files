@@ -1,6 +1,6 @@
 [core]
 	editor = nano
-	excludesfile = /Users/michaellandry/.gitignore_global
+	excludesfile = /Users/michael.landry/.gitignore_global
 	autocrlf = input
 [checkout]
 	defaultRemote = upstream
@@ -33,10 +33,10 @@
 	dt = difftool
 	lga = log --graph --oneline --all --decorate
 [difftool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [http]
 	sslVerify = false

@@ -3,7 +3,8 @@
 
 #work alias
 alias ccl=kubectl
-alias k=kubectl
+alias k=kubect
+alias kc=kafkacat
 # alias br=echo 'snth'
 alias br=reset
 # alias br=~/workcomputer.bash
