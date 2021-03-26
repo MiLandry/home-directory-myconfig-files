@@ -7,8 +7,8 @@
 [push]
 	default = current
 [user]
-	name = michael.landry
-	email = michael.landry@pps.io
+	name = Michael Landry
+	email = michael.landry@accesscfa.com
 [help]
 	autocorrect = 1
 [color]
@@ -34,7 +34,7 @@
 	lga = log --graph --oneline --all --decorate
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
