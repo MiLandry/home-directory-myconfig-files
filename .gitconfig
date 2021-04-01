@@ -9,6 +9,7 @@
 [user]
 	name = Michael Landry
 	email = michael.landry@accesscfa.com
+	signingkey = 55500AC13E21FC57C5C7D757B137330EC15511B3
 [help]
 	autocorrect = 1
 [color]
@@ -52,6 +53,7 @@
 	clean = git-lfs clean -- %f
 [commit]
 	template = ~/.stCommitMsg
+	gpgsign = true
 [credential]
 	helper = osxkeychain
 [mergetool]
@@ -75,3 +77,5 @@
 [mergetool "kdiff3"]
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 	trustExitCode = false
+[gpg]
+	program = /usr/local/bin/gpg

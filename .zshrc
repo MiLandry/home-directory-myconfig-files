@@ -1,6 +1,33 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# yet another plugin manager: ZGEN
+source "${HOME}/.zgen/zgen.zsh"
+# if the init script doesn't exist
+if ! zgen saved; then
+
+  # specify plugins here
+  zgen oh-my-zsh
+
+  # zgen oh-my-zsh plugins/git
+  # zgen oh-my-zsh plugins/sudo
+  # zgen oh-my-zsh plugins/command-not-found
+  # zgen oh-my-zsh themes/arrow
+
+  # generate the init script from plugins above
+  zgen save
+fi
+
+zgen load lukechilds/zsh-nvm
+
+# END ZGEN
+
+
+
+
+
+
+# VAR STUFF
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -113,6 +140,8 @@ alias dif="git diff"
 alias cls="clear"
 alias reload="source ~/.zshrc"
 alias load="source ~/.zshrc"
+alias st='subl'
+alias chrome="open -a 'Google Chrome'"
 
 
 wd() {
