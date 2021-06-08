@@ -1,5 +1,6 @@
 # home config directory stuff
 TODO : there are currently two repos, one for windows, one for mac, at some point you should probably combine into one repo
+This is the MAC version
 
 ## Stuff checked in here
 *Scripts that make make mac like posh git
